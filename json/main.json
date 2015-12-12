@@ -1,0 +1,86 @@
+{ 
+	"questions": [
+    { 
+            "background_picture":"./images/jungle.png",
+            "description":"What are these animals?",
+            "tap_option_1": { 
+                                "question": "This shape is a...",
+                                "a1": "Elephant",
+                                "a2": "Tiger",
+                                "a3": "Zebra",
+                                "a4": "Gorilla",
+                                "a":"a1",
+                                "style":"top: 50vh; left: 3vw",
+                                "image":"./images/question.png",
+                                "sound":"sounds/elephant.mp3"
+                            },
+            "tap_option_2": { 
+                                "question": "This shape is a...",
+                                "a1": "Elephant",
+                                "a2": "Tiger",
+                                "a3": "Zebra",
+                                "a4": "Gorilla",
+                                "a":"a4",
+                                "style":"top: 8vh; left: 28vw;",
+                                "image":"./images/question.png",
+                                "sound":"sounds/gorilla1.mp3"
+                            }, 
+
+            "tap_option_3": { 
+                                "question": "This shape is a...",
+                                "a1": "Elephant",
+                                "a2": "Tiger",
+                                "a3": "Zebra",
+                                "a4": "Gorilla",
+                                "a":"a2",
+                                "style":"top: 50vh; left: 53vw;",
+                                "image":"./images/question.png",
+                                "sound":"sounds/tiger1.mp3"   
+                            },
+            "tap_option_4": { 
+                                "question": "This shape is a...",
+                                "a1": "Elephant",
+                                "a2": "Tiger",
+                                "a3": "Zebra",
+                                "a4": "Gorilla",
+                                "a":"a3",
+                                "style":"top: 50vh; left: 78vw",
+                                "image":"./images/question.png",
+                                "sound":"sounds/horse1.mp3"
+                            }
+        },
+		{ 
+			"background_picture":"./images/mountrush.jpg",
+            "description":"Can you name these presidents?",
+            "tap_option_1": { 
+            	"question": "What is my name?", 
+            	"a1": "John",
+            	"a2": "Benjamin",
+            	"a3": "George",
+            	"a4": "Abraham",
+            	"a":"a3",
+            	"style":"top: 10vh; left: 5vw;",
+            	"image":"http://www.history.org/almanack/people/images/washington.jpg"
+            	},
+            "tap_option_2": { "question": "What is my name?", "a1": "John", "a2": "Thomas", "a3": "Benjamin", "a4": "Abraham", "a":"a2", "style":"top: 25vh; left: 30vw;", "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg/220px-Official_Presidential_portrait_of_Thomas_Jefferson_%28by_Rembrandt_Peale%2C_1800%29.jpg" }, 
+            "tap_option_3": { "question": "What is my name?", "a1": "Theodore", "a2": "George", "a3": "Benjamin", "a4": "Abraham", "a":"a1", "style":"top: 45vh; left: 53vw;", "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/T_Roosevelt.jpg/220px-T_Roosevelt.jpg" },
+            "tap_option_4": { "question": "What is my name?", "a1": "John", "a2": "George", "a3": "Benjamin", "a4": "Abraham", "a":"a4", "style":"top: 45vh; left: 75vw;", "image":"http://media-2.web.britannica.com/eb-media/34/78134-004-8587374E.jpg" }
+		},
+		{ 
+            "background_picture":"./images/coins.jpg",
+            "description":"Where are these coins from?",
+            "tap_option_1": { "question": "This is a special coin from...", "a1": "Australia", "a2": "Vietnam", "a3": "Canada", "a4": "Argentina", "a":"a1", "style":"top: 1vh; left: 22vw; width: 12vw; height: 12vw;", "image":"https://upload.wikimedia.org/wikipedia/commons/0/05/Reliefmap_of_Australia.png" },
+            "tap_option_2": { "question": "Think of Crowns", "a1": "Netherlands", "a2": "Czech Republic", "a3": "Estonia", "a4": "Sweden", "a":"a2", "style":"top: 1vh; left: 42vw; width: 12vw; height: 12vw;", "image":"http://img.radio.cz/pictures/r/penize/mince.jpg" }, 
+            "tap_option_3": { "question": "Am I thinking pyramids?", "a1": "Indonesia", "a2": "Mexico", "a3": "Laos", "a4": "Egypt", "a":"a4", "style":"top: 29vh; left: 59vw;", "image":"http://www.joelscoins.com/images/egypt05setb.jpg" },
+            "tap_option_4": { "question": "What Country is this from?", "a1": "USA", "a2": "Brazil", "a3": "Canada", "a4": "Mexico", "a":"a4", "style":"top: 1vh; left: 82vw; width: 12vw; height: 12vw;", "image":"http://typesets.wdfiles.com/local--files/mexico:1-peso-1992/92REV.JPG" }
+        },
+        { 
+            "background_picture":"./images/shapes.png",
+            "description":"What shapes are these?",
+            "tap_option_1": { "question": "This shape is a...", "a1": "Circle", "a2": "Sphere", "a3": "Star", "a4": "Triangle", "a":"a1", "style":"top: 50vh; left: 3vw;", "image":"http://alloutput.com/wp-content/uploads/2013/11/black-circle-mask-to-fill-compass-outline.png" },
+            "tap_option_2": { "question": "This shape is a...", "a1": "4 Cornered' Something", "a2": "Cube", "a3": "Rectangle", "a4": "Square", "a":"a4", "style":"top: 8vh; left: 28vw;", "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ski_trail_rating_symbol-blue_square.svg/600px-Ski_trail_rating_symbol-blue_square.svg.png" }, 
+            "tap_option_3": { "question": "This shape is a...", "a1": "Triangle", "a2": "Hexagon", "a3": "Star", "a4": "Pointy Object", "a":"a3", "style":"top: 50vh; left: 53vw;", "image":"http://images.clipartpanda.com/clipart-star-RTA9RqzTL.png" },
+            "tap_option_4": { "question": "This shape is a...", "a1": "Circle", "a2": "Heart", "a3": "Not sure", "a4": "Circled Triangle", "a":"a2", "style":"top: 50vh; left: 78vw", "image":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/2000px-Heart_coraz%C3%B3n.svg.png" }
+        }
+	]	
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tetris</title>
+        <link rel='stylesheet' href='css/tetris.css' />
+        <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+        <div id="container">
+        	<canvas id="tetris_canvas" width="300" height="500"></canvas>
+    		<button id="left-btn" onclick="keyPress('left');">Left</button>
+            <button id="right-btn" onclick="keyPress('right');">Right</button>
+            <button id="down-btn" onclick="keyPress('down');">Down</button>
+            <button id="Up-btn" onclick="keyPress('rotate');">Rotate</button>
+            <a href='index.html'>EXIT HOME</a>
+        </div>
+
+        <script src='js/tetris.js'></script>
+        <script src='js/controller.js'></script>
+        <script src='js/render.js'></script>
+
+        <div id='tilt_phone_message'>
+            <img src='images/landscapemode.png' />
+            <p>To play this game, please tilt your phone in landscape view. </p>
+        </div>
+    </body>
+</html>

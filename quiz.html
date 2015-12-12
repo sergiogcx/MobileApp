@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- 
+	Web Quiz Game Engine v0.1 by
+	SERGIO GARCIA <gar13065@byui.edu>
+-->
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>Web Quiz Game Engine by Sergio Garcia</title>
+		<meta name="author" content="Sergio Garcia">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/quiz.css">
+		<link rel="stylesheet" type="text/css" href="css/fontawesome.css">
+		<script src='js/quiz.js'></script>
+	</head>
+<body onload='initialize();'>
+
+<div id='mainframe'></div>
+<div id='description'></div>
+<div id='button_left' class='move_button' style='position: absolute; bottom: 10vh; left: 0vw;' onclick='turn_page_back();'>&lt;</div>
+<div id='button_left' class='move_button' style='position: absolute; bottom: 10vh; right: 0vw;' onclick="turn_page_next()">&gt;</div>
+
+<div id='scoreboard'>
+	<div style='float: left; width: 50%;'>Score:&nbsp;&nbsp;</div>
+	<div style='float: left; width: 50%;' id='score'>10/10</div>
+</div>
+<div id='exitmenu'>
+    <a href='index.html'><div class='tap_button' style='left: 0; bottom:0;'>Exit Home</div></a>
+    <a href='#' onclick='toggleFullScreen();'><div class='tap_button' style='right: 0; bottom:0;'>Full Screen</div></a>
+</div>
+
+<div id='question_box'>
+	<img id='picture' />
+
+	
+	<audio id="asound" src="sounds/tiger1.mp3"></audio>
+	<button id='sound' onclick="document.getElementById('asound').play()">Play Sound</button>
+	
+	<div style='margin-left: 5vw; float:left;'>
+		<div id='question'></div>
+		<div id='a1' class='answer_element' onclick="check_answer(this);"></div>
+		<div id='a2' class='answer_element' onclick="check_answer(this);"></div>
+		<div id='a3' class='answer_element' onclick="check_answer(this);"></div>
+		<div id='a4' class='answer_element' onclick="check_answer(this);"></div>
+	</div>
+	<div id='close_question_box' class='tap_button' style='position: absolute; top: 75vh; left: 10vh;' onclick="clear_question_box();">Cancel</div>
+</div>
+
+<div id='dialog' class='dialog'>
+	<div id='dialog_title' class='dialog_title'>Instructions</div>
+	<div id='dialog_content' class='dialog_content'>
+		<img src='images/intro.png' class='dialog_image' /><br/>
+		<div style='position: relative; top: 5vh; left: 5vw;'>Try to guess as many answers as humanly possible! ... </div>
+		<div style='position: absolute; bottom: 20vh; left: 8vw;'>The more you guess correctly, the greater your score!</div>
+	</div>
+	<div id='close_dialog' class='tap_button' style='top: 68vh; left: 55vw;' onclick="close_dialog();">Okay</div>
+</div>
+
+<div id='tilt_phone_message'>
+	<img src='images/landscapemode.png' />
+	<p>To play this game, please tilt your phone in landscape view. </p>
+</div>
+
+</body>
+</html>

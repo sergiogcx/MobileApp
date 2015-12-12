@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <title>JavaScript Objects - Sergio Garcia</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Sergio Garcia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/foozball.css">
+    <script src='js/foozball.js'> </script>
+</head>
+<body onload="startup();" onkeydown="keyEvent(event);" onkeyup="metaKeyUp(event);">
+    <div id='field'>
+        <div id='raquet_a' class='raquet'></div>
+        <div id='raquet_b' class='raquet'></div>
+        <canvas id="ball" onclick='start_game();'></canvas>
+    </div>
+    <div id='exitmenu'>
+        <a href='index.html'><div class='tap_button' style='left: 0; bottom:0;'>Exit Home</div></a>
+        <a href='#' onclick='toggleFullScreen();'><div class='tap_button' style='right: 0; bottom:0;'>Full Screen</div></a>
+        <div id='score_display'>Current Score: 0-0</div>  
+    </div>
+ 
+   <script>
+        viewport_max_y = Math.round((document.getElementById("field").clientHeight / Math.max(document.documentElement.clientHeight, window.innerHeight || 0)) * 100);
+        viewport_max_x = Math.round((document.getElementById("field").clientWidth / Math.max(document.documentElement.clientWidth, window.clientWidth || 0)) * 100);
+        console.log("MAXY: " + viewport_max_y + ", MAXX: "+ viewport_max_x);
+
+        initialize();     
+    </script>
+
+    <div id='dialog' class='dialog'>
+        <div id='dialog_title' class='dialog_title'>Tiny FooZball - Sergio Garcia</div>
+        <div id='dialog_content' class='dialog_content'>
+        <img src='images/ball.png' class='dialog_image' /><br/>
+        <div style='position: relative; top: 5vh; left: 5vw;'> Player A : Touch Red Bar, Or press W -> Up, S->Down </div>
+        <div style='position: relative; top: 10vh; left: 5vw;'> Player B : Touch Blue Bar, or Arrow Up, Arrow Down </div>
+        <div style='position: absolute; bottom: 20vh; left: 28vw;'><b>TAP THE SOCCER BALL TO BEGIN<br/> </b>Or, Press SPACE to roll the ball!</div>
+        </div>
+        <div id='close_dialog' class='tap_button' style='top: 68vh; left: 55vw;' onclick="close_dialog();">Okay</div>    
+    </div>
+
+<div id='tilt_phone_message'>
+        <img src='images/landscapemode.png' />
+        <p>To play this game, please tilt your phone in landscape view. </p>
+    </div>
+
+</body>
+</html>

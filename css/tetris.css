@@ -1,0 +1,76 @@
+body {
+	margin: 0px;
+	padding: 0px;
+    font-size: 10pt;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+canvas {
+    display: block;
+    margin: auto;
+    border: 1px solid black;
+}
+
+background {
+	background-color: light grey;
+}
+
+#container {
+	max-width: 300px;
+}
+
+#container a {
+	float: left;
+	margin-top: 20px;
+}
+
+#tetris_canvas {
+	width: 300px;
+	height: 500px;
+}
+
+button {
+	float: left;
+	width: 150px;
+	height: 50px;
+}
+
+
+#tilt_phone_message {
+	display: none;
+
+}
+
+#tilt_phone_message p {
+	margin-top: 10vh;
+}
+
+#tilt_phone_message span {
+	margin-top: 20vh;
+	font-size: 30vh;
+	color: black;
+}
+
+#tilt_phone_message img {
+	margin-top: 10vh;
+	height: 40vh;
+}
+
+ @media screen and (orientation:landscape) {
+ 	#tilt_phone_message {
+ 			display: block;
+ 			z-index: 999;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 90vw;
+			height: 100vh;
+			padding: 5vw;
+			background-color: white;
+			text-align: center;
+			vertical-align: middle;
+
+			font-size: 16pt;
+			font-weight: bold;
+ 	}
+ }

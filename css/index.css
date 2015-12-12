@@ -1,0 +1,92 @@
+body {
+	margin: 0px;
+	padding: 0px;
+    font-size: 10pt;
+    font-family: "Trebuchet MS", sans-serif;
+    overflow:hidden;
+    
+}
+
+div {
+	text-align: center;
+	display: block;
+}
+
+#maindiv {
+	background-image: url("../images/abstract.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#menu_title {
+	background-color: rgba(0,0,0,.8);
+	width: 100vw;
+	font-size: 5vh;
+	color: white;
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+}
+#menu {
+	background-color: rgba(1,0,0,.6);
+}
+
+#menu div {
+	float: left;
+	width: 50vw;
+	height: 20vh;
+	background-color: rgba(0,0,0,.9);
+	font-size: 22pt;
+	color: white;
+}
+
+#menu div:hover {
+	background-color: rgba(0,0,0,1);
+}
+
+#menu div:active {
+	background-color: rgba(0,0,0,1);
+}
+
+#contrib {
+	border-top: 3pt;
+	border-top-style: solid;
+	border-top-color: black;
+	position: fixed;
+	width: 100vw;
+	height: 13vh;
+	background-color: rgba(0,0,0,08);
+	color: white;
+	font-size: 15pt;
+	bottom: 0px;
+	vertical-align: middle;
+	line-height: 13vh;
+}
+
+#menu span {
+	margin-top: 5vh;
+}
+
+
+#image_contianer {
+	height: 40vh;
+	width: 100vw;
+}
+
+#image_contianer img {
+	height: 40vh;
+	max-width: 80vw;
+
+
+	float: right;
+}
+
+ @media screen and (orientation:landscape) {
+ 	#image_contianer {
+ 		display: none;
+ 	}
+
+ 	#menu div {
+ 		height: 40vh;
+ 	}
+}
